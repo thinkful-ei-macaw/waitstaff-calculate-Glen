@@ -1,0 +1,120 @@
+body {
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-left: 3em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 0 2em 0 2em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+
+.meal-details, .charge-details, .earning-details, .buttons {
+    display: table;
+    line-height: 2em;
+}
+
+.meal-price, .tax-rate, .tip-percentage, .subtotal, .tip, .total, .tip-total, .meal-count, .avg-tip-per-meal, .buttons {
+    display: table-row;
+    text-align: center;
+}
+
+label, .subtotal .title, .tip .title, .total .title, .tip-total .title, .meal-count .title, .avg-tip-per-meal .title{
+    display: table-cell;
+    text-align: center;
+}
+
+input, .subtotal .number, .tip .number, .total .number, .tip-total .number, .meal-count .number, .avg-tip-per-meal .number {
+    display: table-cell;
+    padding-left: 15px;
+}
+
+
+.customer-charges {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 0 3.5em 2em 2em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+
+    
+}
+
+.charge-details {
+    display: table;
+    padding-left: 2em;
+}
+
+#submit {
+    margin-right: .5em;
+}
+
+
+
+.earning-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 0 2em 2em 2em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+}
+
+#reset {
+    float: right;
+    margin-right: 24em;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#reset:hover {
+    cursor: pointer;
+}
+
+#submit {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: .5em;
+}
+
+#cancel {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: .5em;
+}
+
+
+
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#cancel:hover {
+    cursor: pointer;
+}
